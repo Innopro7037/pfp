@@ -14,5 +14,6 @@ elseif ($uri === '/pfp/contact') {
     require 'controllers/contact.php';
 }else{
     require 'controllers/404.php';
+    
 
 }
