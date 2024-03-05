@@ -1,4 +1,4 @@
-  RewriteEngine On
+    RewriteEngine On
     RewriteBase /pfp/
 
     RewriteCond %{REQUEST_FILENAME} !-f
