@@ -4,7 +4,7 @@
 
 <main>
   <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-    <p>Random Stranger, PAGE IS NOT FOUND, GET THE FUCK OUT OF HERE</p>
+    <p>404 PAGE NOT FOUND</p>
   </div>
 </main>
 

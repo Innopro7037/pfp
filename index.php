@@ -1,19 +1,21 @@
 <?php
 
-require 'functions.php';
+session_start();
 
-$uri = $_SERVER['REQUEST_URI'];
+require 'Core/functions.php';
+require 'Core/Database.php';
+require 'Core/Response.php';
+require 'Core/Router.php';
 
-if($uri === '/pfp/'){
-    require 'controllers/index.php';
-} 
-elseif ($uri === '/pfp/about') {
-    require 'controllers/about.php';
-} 
-elseif ($uri === '/pfp/contact') {
-    require 'controllers/contact.php';
-}else{
-    require 'controllers/404.php';
-    
+$router = new Router();
 
-}
+$routes = require 'routes.php';
+
+$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
+$method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
+
+$router->route($uri, $method);
+
+
+
+
