@@ -4,19 +4,19 @@
 
 
 <main>
-  <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+  <div>
     <ul>
     <?php foreach($notes as $note) : ?>
         <li>
-            <a href="/pfp/note?id=<?= $note['id'] ?>" class='text-blue-500 hover:underline'>
+            <a href="/pfp/note?id=<?= $note['id'] ?>" >
                 <?= htmlspecialchars($note['body']) ?>
             </a>
         </li>
     <?php endforeach; ?>
     </ul>
 
-    <p class="mt-6">
-      <a href="/pfp/notes/create" class="text-blue-500 hover:underline">Create Note</a>
+    <p>
+      <a href="/pfp/notes/create">Create Note</a>
     </p>
   </div>
 </main>

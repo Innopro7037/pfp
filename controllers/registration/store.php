@@ -39,7 +39,7 @@ if ($user){
 
     login($user);
 
-    header('location: /pfp/');
+    header('location: /pfp/notes');
     exit();
 }
 

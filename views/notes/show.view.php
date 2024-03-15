@@ -4,16 +4,17 @@
 
 
 <main>
-  <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-    <p class="mb-6">
-      <a href="/pfp/notes" class=" text-blue-500 underline ">Back</a>
+  <div>
+    <p>
+      <a href="/pfp/notes">Back</a>
     </p>
+    
     <p><?= htmlspecialchars($note['body']) ?></p>
 
-    <form method="post" class="mt-6">
+    <form method="post">
       <input type="hidden" name="_method" value="DELETE">
       <input type="hidden" name="id" value="<?= $note['id'] ?>">
-      <button class="text-sm text-red-500">Delete</button>
+      <button>Delete</button>
     </form>
   </div>
 </main>

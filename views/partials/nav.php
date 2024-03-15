@@ -18,6 +18,7 @@
                     <a href="/pfp/login" >Login</a>
                   <?php endif; ?>
                   
+                  
               </div>
 
             <?php if ($_SESSION['user'] ?? false) : ?>
