@@ -1,2 +1,8 @@
-This file contains many files that make up a php framework, built over a month.
-- Innocent Prosper Obinna
+PHP MVC FRAMEWORK
+- ROUTING
+- CRUD
+- DATABASE
+- VALIDATION
+- AUTHENTICATION
+- SESSION HANDLING
+- ++ MORE!
